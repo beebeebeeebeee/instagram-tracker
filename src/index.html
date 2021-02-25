@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Who No Follow Me?!</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+  <script src="../node_modules/jquery/dist/jquery.slim.min.js" onload="window.$ = window.jQuery = module.exports;"></script>
+  <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <script src="script.js"></script>
+  <div class="container">
+    <div class="card" style="margin-top: 10px;">
+      <div class="card-header">
+        登入分身Account:
+      </div>
+      <div class="card-body">
+        <form id="form">
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="cookie_login" disabled>
+            <label class="form-check-label" for="cookie_login">用cookies登入</label>
+          </div>
+          <div class="mb-3">
+            <label for="account" class="form-label">分身Account</label>
+            <input type="text" class="form-control" id="account" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">分身Password</label>
+            <input type="password" class="form-control" id="password">
+          </div>
+          <div class="mb-3">
+            <label for="target" class="form-label">目標Account</label>
+            <input type="text" class="form-control" id="target">
+          </div>
+          <button type="submit" class="btn btn-primary">登入並查詢</button>
+        </form>
+        <button onclick="localSearch();" class="btn btn-primary" style="margin-top: 5px;">本地查詢</button>
+      </div>
+    </div>
+    <samp id="console" hidden>
+      this is a console
+    </samp>
+    <div id="datas">
+
+    </div>
+  </div>
+</body>
+
+</html>
